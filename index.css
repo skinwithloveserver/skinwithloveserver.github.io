@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'proxima_nova_reg';
+    src: url('proxima_nova_reg-webfont.ttf') format('truetype');
+}
+
 html {
-    font-family: 'KoHo', sans-serif;
+    font-family: 'proxima_nova_reg';
     font-size: 16px;
 }
 
