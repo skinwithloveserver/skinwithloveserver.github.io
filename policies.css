@@ -1,0 +1,382 @@
+html {
+    font-family: 'KoHo', sans-serif;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+#navLarge {
+    padding: 1.25rem 0;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+}
+
+#navLarge img {
+    padding-left: 1.25rem;
+    height: 140%;
+}
+
+#navLarge ul#mainNav {
+    padding: 0;
+}
+
+#navLarge ul#mainNav, ul#socMediaNav {
+    margin: 0;
+    display: inline;
+    white-space: nowrap;
+}
+
+#navLarge ul#mainNav li, ul#socMediaNav li {
+    display: inline-block;
+}
+
+#navLarge ul#mainNav li {
+    padding: 0.75rem;
+    border-right: 0.1rem solid black;
+}
+
+#navLarge ul#mainNav li:last-child {
+    border-right: none;
+}
+
+#navLarge ul#mainNav li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#navLarge ul#mainNav li div.selectedNav + a, #navLarge ul#mainNav li:hover a {
+    text-shadow: 1px 0 0;
+}
+
+#navLarge ul#mainNav li div {
+    height: 0.2rem;
+}
+
+#navLarge ul#mainNav li div.selectedNav, #navLarge ul#mainNav li:hover div{
+    background-color: #fe1594;
+}
+
+ul#socMediaNav {
+    padding: 0;
+    padding-right: 1.25rem;
+}
+
+ul#socMediaNav li {
+    padding: 0.2rem;
+}
+
+ul#socMediaNav li img {
+    height: 1.75rem;
+    padding: 0.15rem;
+}
+
+ul#socMediaNav li div {
+    height: 0.2rem;
+}
+
+ul#socMediaNav li:hover div {
+    background-color: #fe1594;
+}
+
+#navSmallMin {
+    padding: 1.25rem 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger {
+    box-sizing: border-box;
+    margin-left: 1.25rem;
+    height: 100%;
+    border: 0.2rem solid rgba(255, 255, 255, 0);
+}
+
+#hamburger:hover {
+    cursor: pointer;
+    border: 0.2rem solid #fe1594;
+}
+
+#navSmallMin a {
+    height: 140%;
+}
+
+#navSmallMin a img {
+    height: 100%;
+}
+
+#navSmallMax {
+    visibility: hidden;
+    position:fixed;
+    padding: 1rem;
+    padding-top: 0rem;
+    top: 5.5rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 901px) {
+    #navLarge {
+        visibility: visible;
+    }
+
+    #navSmall {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #navLarge {
+        visibility: hidden;
+    }
+
+    #navSmall {
+        visibility: visible;
+    }
+
+    ul#socMediaNav li img {
+        padding: 0.05rem;
+    }
+}
+
+#navSmallMax ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navSmallMax ul li {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+#navSmallMax ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#navSmallMax ul li div {
+    height: 0.2rem;
+}
+
+#navSmallMax ul li div.selectedNav, #navSmallMax ul li:hover div {
+    background-color: #fe1594;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    padding-top: 8rem;
+    width: 60%;
+}
+
+@media only screen and (max-width: 900px) {
+    main section {
+        width: 90%;
+    }
+}
+
+#sec0 h1 {
+    text-align: center;
+}
+
+div.outter {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+}
+
+div.innerImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2.5rem;
+}
+
+div.innerImg img {
+    width: 8rem;
+}
+
+@media only screen and (max-width: 900px) {
+    div.innerImg img {
+        width: 5rem;
+    }
+}
+
+main section div.line {
+    margin: 2rem 0;
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+#sec1 {
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+
+#sec1 h1 {
+    text-align: center;
+}
+
+#sec1 p {
+    text-align: center;
+}
+
+footer {
+    padding: 2rem 5rem;
+    background-color: #EFEFEF;
+}
+
+#footerFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 900px) {
+    #footerFlex {
+        width: 90%;
+    }
+}
+
+#location, #appointmentContact {
+    padding: 1rem;
+}
+
+#footerFlex h2, #footerFlex p {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+#location {
+    flex: 1 1 20rem;
+}
+
+#location iframe {
+    width: 100%;
+    height: 13rem;
+}
+
+#appointmentContact {
+    flex: 1 1 30rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#appointment, #contact {
+    padding: 0.5rem;
+}
+
+#appointment {
+    flex: 1 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#button {
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    border: 0.15rem solid black;
+    text-align: center;
+}
+
+#button:hover {
+    background-color: silver;
+    border: 0.15rem solid white;
+    color: white;
+}
+
+#contact {
+    flex: 1;
+}
+
+#contact ul {
+    padding: 0;
+    margin: 0;
+}
+
+#contact ul li {
+    list-style: none;
+    margin-bottom: 1.75rem;
+    display: flex;
+}
+
+#contact ul li div {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1.5rem;
+    background-color: silver;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+}
+
+#contact ul li span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact ul li p {
+    margin: 0;
+    text-align: center;
+}
+
+#contact ul li div img {
+    height: 100%;
+}
+
+#email {
+    color: #3399FF;
+}
+
+footer p {
+    margin: 0;
+    margin-top: 1.5rem;
+}
