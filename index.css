@@ -320,6 +320,7 @@ main section#sec2 div:last-child ul li {
 }
 
 main section#sec2 div:last-child ul li span {
+    margin-top: 0.6rem;
     width: 55%;
     border-top: 0.15rem dashed rgba(0, 0, 0, 0.3);
 }
