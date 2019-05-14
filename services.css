@@ -282,8 +282,14 @@ main section#sec1 {
 }
 
 main section#sec1 div {
-    flex: 1 0 25rem;
+    flex: 0 0 27rem;
     padding: 2rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  main section#sec1 div {
+    flex: 1 0 27rem;
+  }
 }
 
 main section#sec1 div h2 {
